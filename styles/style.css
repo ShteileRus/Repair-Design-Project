@@ -13,3 +13,26 @@ body {
 	font-size: 14px;
 	margin: 0 auto;
 }
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-nav {
+	display: flex;
+	gap: 15px;
+}
+
+.header-nav__list {
+	list-style: none;
+}
+
+.header-nav__link {
+	text-decoration: none;
+}
+
+.heder-call-number {
+	display: flex;
+	gap: 15px;
+}
