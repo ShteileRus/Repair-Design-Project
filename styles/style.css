@@ -1,3 +1,13 @@
+@font-face {
+	font-family: "NunitoSans";
+	src: url(../fonts/NunitoSans_7pt-Regular.ttf);
+}
+
+@font-face {
+	font-family: "YesevaOne";
+	src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -12,27 +22,65 @@ body {
 	height: 100%;
 	font-size: 14px;
 	margin: 0 auto;
+	position: relative;
+	font-family: "NunitoSans", sans-serif;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
+	height: 83px;
+	background-color: #131313;
+	position: sticky;
+	margin: 0 auto;
+	align-items: center;
+	padding: 24px 92px;
+}
+
+.header-logo-text {
+	color: rgba(227, 184, 115, 1);
+	font-size: 11px;
 }
 
 .header-nav {
 	display: flex;
-	gap: 15px;
+	gap: 47px;
 }
 
 .header-nav__list {
 	list-style: none;
+	font-size: 11px;
 }
 
 .header-nav__link {
 	text-decoration: none;
+	color: white;
+}
+
+.header-nav__link:hover {
+	color: #e3b873;
 }
 
 .heder-call-number {
 	display: flex;
-	gap: 15px;
+	gap: 45px;
+}
+
+.header-call-number__number {
+	color: #e3b873;
+	text-align: center;
+	line-height: 40px;
+	font-size: 11px;
+}
+
+.button {
+	padding: 13px 33px;
+	width: 161px;
+	height: 37px;
+	background-color: rgba(227, 184, 115, 1);
+	color: white;
+	border-radius: 2px;
+	box-shadow: 0 5px 15px 0 rgba(227, 184, 115, 0.2);
+	text-transform: uppercase;
+	font-size: 11px;
 }
