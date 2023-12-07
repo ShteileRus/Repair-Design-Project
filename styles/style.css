@@ -19,7 +19,6 @@ html,
 body {
 	max-width: 1440px;
 	width: 100%;
-	/* height: 100%; */
 	font-size: 14px;
 	margin: 0 auto;
 	position: relative;
@@ -31,12 +30,12 @@ body {
 	justify-content: space-between;
 	height: 83px;
 	background-color: #131313;
-	/* position: sticky;
-	top: 0; */
-	z-index: 10;
+	z-index: 1000;
 	margin: 0 auto;
 	align-items: center;
 	padding: 24px 92px;
+	position: sticky;
+	top: 0;
 }
 
 .header-logo-text {
@@ -64,7 +63,7 @@ body {
 	transition: ease 0.2s;
 }
 
-.heder-call-number {
+.header-call-number {
 	display: flex;
 	gap: 45px;
 }
@@ -96,7 +95,7 @@ body {
 .main {
 	max-width: 1440px;
 	width: 100%;
-	height: 707px;
+	height: auto;
 }
 
 .section-one {
@@ -105,6 +104,7 @@ body {
 	background-repeat: no-repeat;
 	background: url(../images/background-image.jpg);
 	z-index: 1;
+	height: 707px;
 }
 
 .section-one__block {
@@ -970,4 +970,192 @@ input::placeholder {
 
 .client__name {
 	justify-self: middle;
+}
+
+.section-nine {
+	max-width: 1440px;
+	width: 100%;
+	/* height: 954px; */
+	position: relative;
+}
+
+.section-nine__bcg-color {
+	height: 954px;
+	margin-top: 232px;
+}
+
+.section-nine__restyled-form {
+	width: 883px;
+	/* border: none; */
+	margin: -232px auto;
+	height: 465px;
+	z-index: 10;
+}
+
+.section-nine__form-title {
+	text-transform: uppercase;
+	font-family: "YesevaOne";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 34px auto 46px;
+}
+
+.label-wrap__restyled {
+	display: grid;
+	grid-template-columns: repeat(2, 231px);
+	column-gap: 58px;
+	row-gap: 49px;
+	grid-auto-rows: auto;
+
+	margin: auto 181px;
+}
+
+.form__input-restyled-long,
+.section-nine__form-input-long {
+	width: 517px;
+	margin-top: 0;
+}
+
+.form__input-restyled,
+.section-nine__form-input {
+	width: 231px;
+	margin-top: 0;
+}
+
+.section-nine__label {
+	margin-top: 47px;
+	justify-content: center;
+}
+
+.section-nine__form-button {
+	margin-top: 50px;
+	text-align: center;
+	position: static;
+}
+
+.section-ten {
+	max-width: 1440px;
+	width: 100%;
+	height: 954px;
+	position: relative;
+	background: url(../images/section-nine__bcg.png);
+}
+
+.section-ten__bcg-color {
+	background-color: black;
+	max-width: 1440px;
+	width: 100%;
+	height: 954px;
+	position: absolute;
+	top: 0;
+	opacity: 0.88;
+}
+
+.section-ten__title {
+	width: 100%;
+	margin-top: 275px;
+	position: absolute;
+}
+
+.section-ten__title-text {
+	font-family: "YesevaOne";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+	color: rgba(227, 184, 115, 1);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.section-ten__social-icons {
+	width: 100%;
+	position: absolute;
+	margin-top: 352px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.section-ten__social-icons a {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: rgba(227, 184, 115, 1);
+	text-align: center;
+	line-height: 33px;
+}
+
+.section-ten__map {
+	width: 925px;
+	z-index: 150;
+	position: absolute;
+	margin: 423px 257px;
+	filter: grayscale(100%);
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	height: 133px;
+	background-color: #131313;
+	z-index: 10;
+	margin: 0 auto;
+	align-items: center;
+	padding: 24px 92px;
+	position: relative;
+}
+
+.footer-logo-text {
+	color: rgba(227, 184, 115, 1);
+	font-size: 11px;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 47px;
+}
+
+.footer-nav__list {
+	list-style: none;
+	font-size: 11px;
+}
+
+.footer-nav__link {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-nav__link:hover {
+	color: #e3b873;
+	transition: ease 0.2s;
+}
+
+.footer-call-number {
+	display: flex;
+	gap: 45px;
+}
+
+.footer-call-number__number {
+	color: #e3b873;
+	text-align: center;
+	line-height: 40px;
+	font-size: 11px;
+}
+
+.footer-call-number__button {
+	color: white;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-size: 11px;
+	line-height: 15px;
+	padding: 13px 33px;
+	width: 161px;
+	height: 37px;
+	box-shadow: 0 5px 15px 0 rgba(227, 184, 115, 0.2);
+	background-color: rgba(227, 184, 115, 1);
+}
+
+.footer-call-number__button:hover {
+	cursor: pointer;
 }
