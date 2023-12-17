@@ -187,15 +187,15 @@ body {
 
 .section-two__block {
 	position: absolute;
-	max-width: 1171px;
 	width: 100%;
 	height: 553px;
-	margin: 107px 135px 415px 135px;
+	margin-top: 107px;
 	display: grid;
 	grid-template-columns: 442px 679px;
 	grid-template-rows: 24px 482px;
 	row-gap: 45px;
 	column-gap: 50px;
+	justify-content: center;
 }
 
 .section-two__header-nav {
@@ -787,41 +787,52 @@ input::placeholder {
 	margin-top: 113px;
 	top: 0;
 	position: absolute;
-	width: 1440px;
+	max-width: 1440px;
+	width: 100%;
 	height: 864px;
 	background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.section-seven__image-background {
+.section-seven__image-background img {
 	margin-top: 113px;
 	position: absolute;
 	top: 0;
-	width: 1440px;
+	max-width: 1440px;
+	width: 100%;
 	height: 864px;
 	opacity: 0.9;
+	max-width: 1440px;
+	width: 100%;
 }
 
 .section-seven__grid-image-block {
 	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 45px;
+	width: auto;
+	margin-right: 100px;
 }
 
 .first-column {
-	position: absolute;
+	/* position: absolute; */
 	z-index: 100;
 	display: grid;
-	grid-auto-rows: auto;
+	/* grid-auto-rows: auto; */
 	row-gap: 36px;
-	margin-left: 587px;
 	margin-top: 70px;
 }
 
 .second-column {
-	position: absolute;
+	/* position: absolute; */
 	z-index: 100;
 	display: grid;
 	grid-auto-rows: auto;
-	row-gap: 31px;
-	margin-left: 985px;
+	/* row-gap: 31px; */
+}
+
+.second-column__second-img {
+	margin-top: -50px;
 }
 
 .catalog-block__title {
@@ -879,7 +890,7 @@ input::placeholder {
 	max-width: 1236px;
 	width: 100%;
 	height: 643px;
-	margin: 65px 102px;
+	margin: 65px auto;
 }
 
 .section-eight__image-background {
@@ -1016,9 +1027,12 @@ input::placeholder {
 }
 
 .section-nine__restyled-form {
-	width: 883px;
-	margin-top: -295px;
-	margin-left: 289px;
+	width: 862px;
+	/* margin-top: -295px;
+	margin-left: 289px; */
+
+	margin: -295px auto auto;
+
 	height: 465px;
 	z-index: 10;
 }
@@ -1134,11 +1148,16 @@ input::placeholder {
 }
 
 .section-ten__map {
-	width: 925px;
+	max-width: 1440px;
+	width: 100%;
 	z-index: 150;
 	position: absolute;
-	margin: 352px 257px;
+	margin-top: 352px;
 	filter: grayscale(100%);
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 footer {
@@ -1207,75 +1226,55 @@ footer {
 	cursor: pointer;
 }
 
-@media (max-width: 1300px) {
-	* {
-		margin: 0;
-		padding: 0;
-		border: 0;
-	}
-
+@media (max-width: 991px) {
 	body {
-		max-width: 1300px;
+		max-width: 991px;
 		width: 100%;
 	}
 
-	.block-four {
-		background-image: url(../images/section-two__image.jpg);
-		background-repeat: no-repeat;
-		width: 630px;
-		height: 500px;
+	.nav,
+	.header-call-number__button,
+	.footer {
+		display: none;
 	}
 
-	section {
-		max-width: 1300px;
-		width: 100%;
+	.header {
+		height: 150px;
+		padding: 30px 46px;
+		position: static;
 	}
 
-	.section-seven {
-		max-width: 1300px;
+	.header-call-number__number,
+	.header-logo-text {
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: -0.9px;
 	}
 
-	.section-seven__black-background {
-		width: 1300px;
+	.header-call-number {
+		gap: 0;
 	}
 
-	.section-seven__image-background img {
-		width: 1300px;
+	.header-call-number__number {
+		margin-left: 20px;
 	}
 
-	.section-seven__image-background {
-		width: 1300px;
+	.section-one__block {
+		max-width: 785px;
+		margin-top: 228px;
+		margin-left: 47px;
+		margin-right: auto;
 	}
 
-	.section-seven__grid-image-block {
-		position: relative;
+	.section-one__title {
+		font-size: 60px;
+		line-height: 1.25;
 	}
 
-	.catalog-block__title {
-		margin-left: 28px;
-	}
-
-	.first-column {
-		margin-left: 500px;
-	}
-	.second-column {
-		margin-left: 890px;
-	}
-
-	.section-six__background-image {
-		max-width: 1300px;
-	}
-
-	.section-eight__our-clients {
-		margin: 0 auto;
-	}
-
-	.section-nine__restyled-form {
-		margin: -295px auto 0;
-	}
-
-	.section-ten__map {
-		width: 925px;
-		margin: 354px 187px;
+	.section-one__subtitle {
+		font-size: 35px;
+		margin-top: 50px;
+		line-height: 1.25;
+		max-width: 785px;
 	}
 }
