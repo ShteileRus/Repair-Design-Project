@@ -1305,49 +1305,13 @@ footer {
 		width: 100%;
 	}
 
+	.header {
+		height: 57px;
+	}
+
 	.nav,
 	.header-call-number__button,
 	.footer {
 		display: none;
-	}
-
-	.header {
-		height: 150px;
-		padding: 30px 46px;
-		position: static;
-	}
-
-	.header-call-number__number,
-	.header-logo-text {
-		font-size: 28px;
-		text-transform: uppercase;
-		letter-spacing: -0.9px;
-	}
-
-	.header-call-number {
-		gap: 0;
-	}
-
-	.header-call-number__number {
-		margin-left: 20px;
-	}
-
-	.section-one__block {
-		max-width: 785px;
-		margin-top: 228px;
-		margin-left: 47px;
-		margin-right: auto;
-	}
-
-	.section-one__title {
-		font-size: 60px;
-		line-height: 1.25;
-	}
-
-	.section-one__subtitle {
-		font-size: 35px;
-		margin-top: 50px;
-		line-height: 1.25;
-		max-width: 785px;
 	}
 }
