@@ -803,6 +803,7 @@ input::placeholder {
 	opacity: 0.9;
 	max-width: 1440px;
 	width: 100%;
+	object-fit: cover;
 }
 
 .section-seven__grid-image-block {
@@ -1305,13 +1306,66 @@ footer {
 		width: 100%;
 	}
 
+	.section-one {
+		height: 550px;
+	}
+
+	.section-one__block {
+		margin: 194px 630px 0 134px;
+	}
+
+	.section-one__bcg-color {
+		height: 550px;
+	}
+
 	.header {
 		height: 57px;
+	}
+
+	.header-call-number {
+		gap: 0;
 	}
 
 	.nav,
 	.header-call-number__button,
 	.footer {
 		display: none;
+	}
+
+	.section-one__bcg-color {
+		top: 57px;
+	}
+
+	.repair-list {
+		width: 280px;
+	}
+
+	.section-two__block {
+		margin-top: 37px;
+	}
+
+	.section-six__request {
+		gap: 0;
+	}
+
+	.catalog-block__title {
+		display: none;
+	}
+
+	.clients__card {
+		margin-left: 10px;
+	}
+
+	.section-six__request-list {
+		margin: 106px 50px;
+	}
+
+	.section-seven__grid-image-block {
+		justify-content: center;
+		margin: 0;
+	}
+
+	.clients {
+		gap: 0;
 	}
 }
