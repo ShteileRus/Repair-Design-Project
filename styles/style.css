@@ -102,7 +102,8 @@ body {
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;
-	background: url(../images/background-image.jpg);
+	background-size: cover;
+	background: url(../images/background-image.jpg) center center;
 	z-index: 1;
 	height: 707px;
 }
@@ -1227,6 +1228,8 @@ footer {
 	cursor: pointer;
 }
 
+/* МЕДИА ЗАПРОСЫ */
+
 @media (max-width: 1236px) {
 	.section-five__types {
 		grid-template-columns: repeat(3, 1fr);
@@ -1288,9 +1291,7 @@ footer {
 	.section-seven__grid-image-block {
 		margin-right: 25px;
 	}
-}
 
-@media (max-width: 1145px) {
 	.header-call-number__button {
 		display: none;
 	}
@@ -1367,5 +1368,56 @@ footer {
 
 	.clients {
 		gap: 0;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 990px) {
+	body {
+		max-width: 990px;
+	}
+
+	.section-one {
+		height: 476px;
+	}
+
+	.section-one__block {
+		margin: 85px 18px;
+	}
+
+	.section-one__title {
+		font-size: 23px;
+		line-height: 30px;
+	}
+
+	.section-one__subtitle {
+		font-size: 14px;
+		line-height: 19px;
+		letter-spacing: 0px;
+	}
+
+	.section-one__btns {
+		margin-top: 55px;
+	}
+
+	.section-one__button {
+		width: 338px;
+		margin-bottom: 26px;
+	}
+
+	.section-one__bcg-color {
+		height: 477px;
+	}
+
+	.section-two__block {
+		display: block;
+	}
+
+	.block-three {
+		text-align: center;
+	}
+
+	.block-two,
+	.block-four {
+		display: none;
 	}
 }
