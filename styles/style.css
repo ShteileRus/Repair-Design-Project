@@ -1371,7 +1371,7 @@ footer {
 	}
 }
 
-@media (min-width: 360px) and (max-width: 990px) {
+@media (min-width: 320px) and (max-width: 990px) {
 	body {
 		max-width: 990px;
 	}
