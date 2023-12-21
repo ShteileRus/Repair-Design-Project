@@ -186,6 +186,10 @@ body {
 	background-color: #131313;
 }
 
+.section-two__mobile-img {
+	display: none;
+}
+
 .section-two__block {
 	position: absolute;
 	width: 100%;
@@ -1382,6 +1386,8 @@ footer {
 
 	.section-one__block {
 		margin: 0;
+		max-width: 990px;
+		width: 100%;
 	}
 
 	.section-one__title {
@@ -1433,4 +1439,52 @@ footer {
 	.block-four {
 		display: none;
 	}
+
+	.section-two__mobile-img {
+		display: block;
+		position: relative;
+	}
+
+	.mobile-img img {
+		max-width: 990px;
+		width: 100%;
+	}
+
+	.circles {
+		width: 85%;
+		position: absolute;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		justify-content: space-between;
+	}
+
+	.section-two__lot-inform {
+		margin-top: -10px;
+	}
+
+	.arrows {
+		display: none;
+	}
+
+	.video-navigation img {
+		width: 100%;
+		max-width: 990px;
+	}
+
+	/* вот тут происходят наползания блоков друг на друга.  */
+
+	/* .section-three__online-control-block {
+		margin-top: -326px;
+		position: absolute;
+  } */
+}
+
+/* убрал блок, чтобы глаза не мазолил своей шириной */
+
+.section-nine__restyled-form {
+	display: none;
 }
