@@ -1381,27 +1381,40 @@ footer {
 	}
 
 	.section-one__block {
-		margin: 85px 18px;
+		margin: 0;
 	}
 
 	.section-one__title {
 		font-size: 23px;
 		line-height: 30px;
+		margin: 85px 18px 16px;
 	}
 
 	.section-one__subtitle {
 		font-size: 14px;
 		line-height: 19px;
 		letter-spacing: 0px;
+		margin: 16px 18px;
 	}
 
 	.section-one__btns {
+		position: static;
+		text-align: center;
+		max-width: 990px;
+		width: 100%;
+		padding: 20px;
 		margin-top: 55px;
 	}
 
+	.section-one__button:first-of-type {
+		margin-right: auto;
+	}
+
 	.section-one__button {
-		width: 338px;
-		margin-bottom: 26px;
+		text-align: center;
+		max-width: 990px;
+		width: 100%;
+		margin: auto auto 26px;
 	}
 
 	.section-one__bcg-color {
