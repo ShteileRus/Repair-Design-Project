@@ -253,6 +253,7 @@ body {
 	line-height: 27px;
 	letter-spacing: -1px;
 	font-weight: 400;
+	margin: 20px auto;
 }
 
 .section-two__lot-inform {
@@ -356,7 +357,7 @@ body {
 }
 
 .video-navigation {
-	max-height: 434px;
+	filter: brightness(20%);
 }
 
 .play-btn {
@@ -1253,12 +1254,24 @@ footer {
 		margin: 106px 0;
 	}
 
+	.section-nine__restyled-form {
+		margin: 0 auto;
+	}
+
 	.section-six__request-list {
 		margin: 106px 120px;
 	}
 
-	.section-nine__restyled-form {
-		margin: -295px auto auto;
+	.catalog-block__title {
+		margin-left: 30px;
+	}
+
+	.footer-call-number {
+		gap: 25px;
+	}
+
+	footer {
+		padding: 24px 40px;
 	}
 }
 
@@ -1305,8 +1318,30 @@ footer {
 		grid-template-columns: 42% 47%;
 	}
 
+	.section-six__request {
+		gap: 0;
+	}
+
+	.section-six__request-list {
+		margin: 106px auto auto 120px;
+	}
+
 	.clients {
 		gap: 0;
+	}
+	.section-ten {
+		margin-top: -150px;
+	}
+	.section-ten__bcg-color {
+		top: 0;
+	}
+
+	.catalog-block__title {
+		margin-left: 60px;
+	}
+
+	.section-eight__image-background {
+		bottom: -13px;
 	}
 }
 
@@ -1350,8 +1385,12 @@ footer {
 		width: 280px;
 	}
 
+	.section-three__online-control-block {
+		margin-top: auto;
+	}
+
 	.section-two {
-		height: 1500px;
+		max-height: 100%;
 	}
 
 	.section-two__block {
@@ -1370,8 +1409,16 @@ footer {
 		display: none;
 	}
 
+	.clients {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	.clients__card {
-		margin-left: 10px;
+		margin: 0 auto;
+	}
+
+	.clients__card:nth-child(3) {
+		display: none;
 	}
 
 	.section-six__request-list {
@@ -1456,6 +1503,11 @@ footer {
 		display: none;
 	}
 
+	.section-three,
+	.section-four {
+		background-color: #131313;
+	}
+
 	.section-two__mobile-img {
 		display: block;
 		position: relative;
@@ -1463,7 +1515,7 @@ footer {
 
 	.mobile-img img {
 		max-width: 990px;
-		width: 100%;
+		width: 90%;
 	}
 
 	.circles {
@@ -1476,10 +1528,6 @@ footer {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		justify-content: space-between;
-	}
-
-	.section-two__lot-inform {
-		margin-top: -10px;
 	}
 
 	.arrows {
