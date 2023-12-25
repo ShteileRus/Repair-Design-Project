@@ -1296,12 +1296,17 @@ footer {
 		margin-right: 25px;
 	}
 
-	.header-call-number__button {
+	.header-call-number__button,
+	.footer-call-number__button {
 		display: none;
 	}
 
 	.section-two__block {
 		grid-template-columns: 42% 47%;
+	}
+
+	.clients {
+		gap: 0;
 	}
 }
 
@@ -1345,8 +1350,16 @@ footer {
 		width: 280px;
 	}
 
+	.section-two {
+		height: 1500px;
+	}
+
 	.section-two__block {
 		margin-top: 37px;
+	}
+
+	.section-two__lot-inform {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.section-six__request {
@@ -1368,10 +1381,6 @@ footer {
 	.section-seven__grid-image-block {
 		justify-content: center;
 		margin: 0;
-	}
-
-	.clients {
-		gap: 0;
 	}
 }
 
@@ -1416,6 +1425,13 @@ footer {
 		margin-right: auto;
 	}
 
+	.section-two__subtitle {
+		text-align: center;
+		font-size: 11px;
+		line-height: 17px;
+		letter-spacing: 0;
+		padding: 0 15px;
+	}
 	.section-one__button {
 		text-align: center;
 		max-width: 990px;
@@ -1475,7 +1491,7 @@ footer {
 		max-width: 990px;
 	}
 
-	/* вот тут происходят наползания блоков друг на друга.  */
+	/* вот тут происходят наползания блоков друг на друга. из-за позишна  */
 
 	/* .section-three__online-control-block {
 		margin-top: -326px;
@@ -1485,6 +1501,6 @@ footer {
 
 /* убрал блок, чтобы глаза не мазолил своей шириной */
 
-.section-nine__restyled-form {
+/* .section-nine__restyled-form {
 	display: none;
-}
+} */
