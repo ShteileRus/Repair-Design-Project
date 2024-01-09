@@ -101,9 +101,8 @@ body {
 .section-one {
 	height: 100%;
 	width: 100%;
-	background-repeat: no-repeat;
 	background-size: cover;
-	background: url(../images/background-image.jpg) center center;
+	background: url(../images/background-image.jpg) no-repeat center center;
 	z-index: 1;
 	height: 707px;
 }
@@ -112,7 +111,6 @@ body {
 	margin: 194px 630px 208px 134px;
 	position: absolute;
 	max-width: 560px;
-	max-height: 305px;
 	z-index: 3;
 }
 
@@ -186,7 +184,7 @@ body {
 	background-color: #131313;
 }
 
-.section-two__mobile-img {
+.section-two__mob-img {
 	display: none;
 }
 
@@ -253,7 +251,6 @@ body {
 	line-height: 27px;
 	letter-spacing: -1px;
 	font-weight: 400;
-	margin: 20px auto;
 }
 
 .section-two__lot-inform {
@@ -357,7 +354,7 @@ body {
 }
 
 .video-navigation {
-	filter: brightness(20%);
+	max-height: 434px;
 }
 
 .play-btn {
@@ -1235,136 +1232,17 @@ footer {
 
 /* МЕДИА ЗАПРОСЫ */
 
-@media (max-width: 1236px) {
-	.section-five__types {
-		grid-template-columns: repeat(3, 1fr);
+@media (max-width: 375px) {
+	section {
+		max-width: 375px;
 	}
-
 	.header {
-		padding: 27px;
+		padding: 0;
+		justify-content: space-between;
+		height: 56px;
+		font-size: 11px;
+		padding: 19px;
 		position: static;
-	}
-
-	.section-two__block {
-		row-gap: 25px;
-		column-gap: 20px;
-	}
-
-	.section-six__form {
-		margin: 106px 0;
-	}
-
-	.section-nine__restyled-form {
-		margin: 0 auto;
-	}
-
-	.section-six__request-list {
-		margin: 106px 120px;
-	}
-
-	.catalog-block__title {
-		margin-left: 30px;
-	}
-
-	.footer-call-number {
-		gap: 25px;
-	}
-
-	footer {
-		padding: 24px 40px;
-	}
-}
-
-@media (max-width: 1145px) {
-	.section-one__block {
-		width: 100%;
-	}
-	.section-one__title {
-		font-size: 30px;
-	}
-
-	.section-one__subtitle {
-		font-size: 18px;
-	}
-
-	.section-two__block {
-		height: auto;
-	}
-
-	.repair-list {
-		margin-left: 0;
-	}
-
-	.block-four {
-		/* max-width: 500px; */
-		width: 100%;
-		object-fit: cover;
-	}
-
-	.catalog-block__title {
-		margin-left: 15px;
-	}
-
-	.section-seven__grid-image-block {
-		margin-right: 25px;
-	}
-
-	.header-call-number__button,
-	.footer-call-number__button {
-		display: none;
-	}
-
-	.section-two__block {
-		grid-template-columns: 42% 47%;
-	}
-
-	.section-six__request {
-		gap: 0;
-	}
-
-	.section-six__request-list {
-		margin: 106px auto auto 120px;
-	}
-
-	.clients {
-		gap: 0;
-	}
-	.section-ten {
-		margin-top: -150px;
-	}
-	.section-ten__bcg-color {
-		top: 0;
-	}
-
-	.catalog-block__title {
-		margin-left: 60px;
-	}
-
-	.section-eight__image-background {
-		bottom: -13px;
-	}
-}
-
-@media (max-width: 991px) {
-	body {
-		max-width: 991px;
-		width: 100%;
-	}
-
-	.section-one {
-		height: 550px;
-	}
-
-	.section-one__block {
-		margin: 194px 630px 0 134px;
-	}
-
-	.section-one__bcg-color {
-		height: 550px;
-	}
-
-	.header {
-		height: 57px;
 	}
 
 	.header-call-number {
@@ -1372,68 +1250,13 @@ footer {
 	}
 
 	.nav,
-	.header-call-number__button,
-	.footer {
+	.header-call-number__button {
 		display: none;
 	}
 
 	.section-one__bcg-color {
-		top: 57px;
-	}
-
-	.repair-list {
-		width: 280px;
-	}
-
-	.section-three__online-control-block {
-		margin-top: auto;
-	}
-
-	.section-two {
-		max-height: 100%;
-	}
-
-	.section-two__block {
-		margin-top: 37px;
-	}
-
-	.section-two__lot-inform {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.section-six__request {
-		gap: 0;
-	}
-
-	.catalog-block__title {
-		display: none;
-	}
-
-	.clients {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.clients__card {
-		margin: 0 auto;
-	}
-
-	.clients__card:nth-child(3) {
-		display: none;
-	}
-
-	.section-six__request-list {
-		margin: 106px 50px;
-	}
-
-	.section-seven__grid-image-block {
-		justify-content: center;
-		margin: 0;
-	}
-}
-
-@media (min-width: 320px) and (max-width: 990px) {
-	body {
-		max-width: 990px;
+		top: 55px;
+		height: 477px;
 	}
 
 	.section-one {
@@ -1442,113 +1265,79 @@ footer {
 
 	.section-one__block {
 		margin: 0;
-		max-width: 990px;
-		width: 100%;
+		margin: 85px 18px auto;
 	}
 
 	.section-one__title {
-		font-size: 23px;
-		line-height: 30px;
-		margin: 85px 18px 16px;
+		font-size: 24px;
+		line-height: 1.2;
 	}
 
 	.section-one__subtitle {
 		font-size: 14px;
-		line-height: 19px;
-		letter-spacing: 0px;
-		margin: 16px 18px;
+		line-height: 1.3;
+		letter-spacing: -0.9px;
 	}
 
 	.section-one__btns {
-		position: static;
-		text-align: center;
-		max-width: 990px;
+		margin-top: 70px;
 		width: 100%;
-		padding: 20px;
-		margin-top: 55px;
 	}
 
-	.section-one__button:first-of-type {
-		margin-right: auto;
-	}
-
-	.section-two__subtitle {
-		text-align: center;
-		font-size: 11px;
-		line-height: 17px;
-		letter-spacing: 0;
-		padding: 0 15px;
-	}
 	.section-one__button {
-		text-align: center;
-		max-width: 990px;
+		display: block;
 		width: 100%;
-		margin: auto auto 26px;
+		max-width: 1300px;
 	}
 
-	.section-one__bcg-color {
-		height: 477px;
+	.section-one__button:nth-child(1) {
+		margin-bottom: 26px;
 	}
 
 	.section-two__block {
 		display: block;
+		margin-top: 30px;
+	}
+	.block-one,
+	.block-two,
+	.arrows {
+		display: none;
 	}
 
 	.block-three {
 		text-align: center;
 	}
 
-	.block-two,
-	.block-four {
-		display: none;
+	.section-two__title {
+		font-size: 22px;
+		margin-bottom: 18px;
 	}
 
-	.section-three,
-	.section-four {
-		background-color: #131313;
-	}
-
-	.section-two__mobile-img {
+	.section-two__mob-img {
 		display: block;
-		position: relative;
 	}
 
-	.mobile-img img {
-		max-width: 990px;
-		width: 90%;
+	.section-two__subtitle {
+		font-size: 11px;
+		line-height: 1.7;
+		padding: 0 30px;
+		margin-bottom: 71px;
 	}
 
-	.circles {
-		width: 85%;
+	.mob-img__nav-btns {
 		position: absolute;
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		justify-content: space-between;
-	}
-
-	.arrows {
-		display: none;
-	}
-
-	.video-navigation img {
+		cursor: pointer;
+		max-width: 1300px;
 		width: 100%;
-		max-width: 990px;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 30px;
 	}
 
-	/* вот тут происходят наползания блоков друг на друга. из-за позишна  */
-
-	/* .section-three__online-control-block {
-		margin-top: -326px;
-		position: absolute;
-  } */
+	.section-two__mob-img {
+		position: relative;
+	}
 }
-
-/* убрал блок, чтобы глаза не мазолил своей шириной */
-
-/* .section-nine__restyled-form {
-	display: none;
-} */
