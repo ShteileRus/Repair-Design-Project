@@ -353,17 +353,37 @@ body {
 	padding-right: 6px;
 }
 
-.video-navigation {
-	max-height: 434px;
-}
-
-.play-btn {
+/* .play-btn {
 	z-index: 3;
 	position: absolute;
 	top: 46.2%;
 	left: 49.9%;
 	margin-left: -72.5px;
 	cursor: pointer;
+} */
+
+.control-block__video button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #e3b873;
+	height: 85px;
+	width: 85px;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	cursor: pointer;
+	border-radius: 50%;
+	text-align: center;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.control-block__video button:hover {
+	box-shadow: 0px 5px 30px 0px #e3b87333;
 }
 
 .section-three__bcg-color {
@@ -1318,10 +1338,11 @@ footer {
 	}
 
 	.section-two__subtitle {
-		font-size: 11px;
-		line-height: 1.7;
+		font-size: 10px;
+		line-height: 1.9;
 		padding: 0 30px;
 		margin-bottom: 71px;
+		letter-spacing: 0;
 	}
 
 	.mob-img__nav-btns {
@@ -1339,5 +1360,75 @@ footer {
 
 	.section-two__mob-img {
 		position: relative;
+	}
+
+	.section-two__lot-inform {
+		margin-top: 27px;
+		margin-left: 18px;
+		text-align: left;
+		grid-template-columns: repeat(2, 40%);
+		grid-template-rows: auto;
+		row-gap: 30px;
+		column-gap: 17px;
+		height: auto;
+	}
+
+	.lot-inform__title {
+		font-size: 14px;
+	}
+
+	.lot-inform__subtitle {
+		font-size: 11px;
+		line-height: 1.4;
+	}
+
+	.section-three__online-control-block {
+		margin-top: -346px;
+		letter-spacing: 0;
+	}
+
+	.control-block__title {
+		font-size: 22px;
+		margin-bottom: 19px;
+	}
+	.section-three__bcg-color {
+		display: none;
+	}
+	.video-navigation img {
+		filter: brightness(20%);
+		max-width: 1300px;
+		width: 100%;
+		padding: 0 18px;
+		height: 204px;
+		object-fit: cover;
+	}
+
+	.control-block__video {
+		position: relative;
+	}
+
+	.control-block__video button {
+		height: 37px;
+		width: 37px;
+		padding: 0;
+	}
+
+	.play-triangle {
+		width: 12px;
+		height: 12px;
+	}
+
+	.line {
+		display: none;
+	}
+
+	.section-three,
+	.section-four {
+		background: #131313;
+		margin: 0;
+	}
+
+	.section-three__subtitle {
+		color: white;
 	}
 }
