@@ -1392,12 +1392,20 @@ input::placeholder:focus {
 	.footer-nav {
 		gap: 30px;
 	}
+
+	.section-six__request-list {
+		margin-left: 50px;
+	}
+
+	.section-six__form {
+		margin-left: 30px;
+	}
 }
 
 @media (max-width: 855px) {
 	.header-nav,
 	.footer-nav {
-		gap: 17px;
+		gap: 10px;
 	}
 
 	.section-eight,
