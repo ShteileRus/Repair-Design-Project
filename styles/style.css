@@ -1381,6 +1381,19 @@ input::placeholder:focus {
 	}
 }
 
+@media (max-width: 1000px) {
+	.section-two__lot-inform {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 900px) {
+	.header-nav,
+	.footer-nav {
+		gap: 30px;
+	}
+}
+
 @media (max-width: 855px) {
 	.header-nav,
 	.footer-nav {
@@ -1394,7 +1407,12 @@ input::placeholder:focus {
 
 	.section-nine__restyled-form {
 		max-width: 862px;
+		width: 100%;
+		margin: 0;
+		margin-top: 50px;
+	}
 
+	.video-navigation img {
 		width: 100%;
 	}
 }
@@ -1554,7 +1572,7 @@ input::placeholder:focus {
 		max-width: 1300px;
 		width: 100%;
 		padding: 0 18px;
-		height: 390px;
+		height: 340px;
 		object-fit: cover;
 	}
 
@@ -1714,7 +1732,7 @@ input::placeholder:focus {
 		overflow: hidden;
 		object-fit: cover;
 		padding: 0 18px;
-		height: 400px;
+		height: 340px;
 	}
 
 	.section-six,
@@ -1882,7 +1900,7 @@ input::placeholder:focus {
 
 	iframe {
 		max-width: 925px;
-		height: 500px;
+		height: 340px;
 	}
 }
 
